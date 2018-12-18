@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yln.mqttdemo.MainActivity">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/swipe_target"
+        android:background="#fff8f8f9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/send_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:background="@drawable/base_edit_bg"
+            android:hint="请输入要发送的消息"
+            android:padding="5dp"
+            />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="发送"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
